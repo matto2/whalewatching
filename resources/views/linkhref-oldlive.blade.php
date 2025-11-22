@@ -1,0 +1,1 @@
+href="https://fareharbor.com/embeds/book/stagnaro/?full-items=yes&amp;selected-items=25896,25898,25899,25902" onclick="return !(window.FH &amp;&amp; FH.open({ shortname: 'stagnaro', items: [25896,25898,25899,25902], fallback: 'simple', fullItems: 'yes', view: 'items' }));"

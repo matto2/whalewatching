@@ -1,0 +1,16 @@
+					<h3>Migrating Gray Whales Put on a Show</h3>
+					<img src="/images/210.jpg" alt="Migrating Gray Whales Put on a Show while Whale Watching in Monterey Bay California with Stagnaro Charters">
+					<p>Tuesday, March 17: For St Patrick's Day we had really exciting showings from five gray whales migrating across Monterey Bay. We were able to observe a group of three gray whales for 45 minutes up the coast. The whales were exhibiting lots of behaviors we don’t always get to see from grays: chin slapping, spy-hops, a great show from gray whales. Then we saw two more gray whales breaching out of the water about 3 miles off the Santa Cruz coastline. We also had a super fun pod of long beaked common dolphins riding alongside the boat!</p>
+					<img src="/images/211.jpg" alt="Long beaked common dolphins while Whale Watching in Monterey Bay California with Stagnaro Charters">
+					<p class="cr">Long beaked common dolphins. Monterey Bay, with Santa Cruz Whale Watching. Photo: Michael Nelson</p>
+					<p>Twice every year over 20,000 gray whales pass through Monterey Bay waters off of Santa Cruz. The first time occurs from December through mid February when they are migrating south from the cold arctic waters of the Bering Sea to their winter calving grounds off of the Baja Peninsula. Then north again to their summer feeding grounds in the Bering Sea of Alaska. Northbound whales are usually traveling across Monterey Bay from mid February through April.</p>
+					<p>This 10,000+ mile round-trip is one of the longest migrations of any animal known. Peak northbound migration is around mid March. The gray whale can reach 45' long. Females are usually larger than males. During their migration they are constantly traveling at 2-4 miles per hour. This can make for ideal viewing. Gray whales will sound (dive) for 2-5 minutes, sometimes longer. Their northern migration tends to be more social and leisurely. At times they can be spotted mating, breaching and "spy-hopping".</p>
+					<p>Join us for year-round marine wildlife adventure! Next whale watching trips are Friday, March 20 at 11:00 AM, Saturday, March 21 at 12:00 PM and Sunday the 22nd at 10:00 AM. Spring Break Trips on offer, too! Whale watching trips run Monday, Wednesday and Friday next week.</p>
+					<p>See the Monterey Bay National Marine Sanctuary with Santa Cruz Whale Watching!</p>
+					<h6>Commitment to the Monterey Bay National Marine Sanctuary</h6>
+					<p>Our main tour boat Velocity is now powered by brand new engines that meet the latest EPA standards in clean burning, fuel saving marine motors. These engines are quiet, no gassy smell, and fast!</p>
+					<img src="/images/full.jpg" alt="Velocity Full while Whale Watching in Monterey Bay California with Stagnaro Charters">
+					<p class="cr">This entry was posted on March 18, 2015 by jennyo.</p>
+					<p class="book">Book your trip today! <a @include('linkhref')>Book online now</a> or call <em>(831) 427-0230</em></p>
+					<hr>
+					

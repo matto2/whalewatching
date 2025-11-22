@@ -1,0 +1,301 @@
+@extends('layouts.frontend')
+
+@section('head')
+	<title>{{ pageTitle( $blog->name ) }}</title>
+@stop
+
+@section('title')
+@stop
+
+@section('content')
+
+	<div id="pageTitle" class="row collapse">
+		<div class="small-12 columns">
+			<h1>{{ $blog->name }}</h1>
+			<div id="alerts" data-form-ajax-alerts></div>
+		</div>
+	</div>
+
+	@if ( $entries && count( $entries ) )
+
+		<div class="row collapse">	
+			<div class="small-12 columns">
+
+				@foreach ( $entries as $entry )
+					<div class="secondary callout">
+						<h2><a href="{{ $entry->route() }}">{{ $entry->name}}</a></h2>
+						{!! $entry->content !!}
+						<div class="cr">
+							{{ $entry->poster->displayName() ?? '' }} | {{ $entry->created_at->toDayDateTimeString() }} {!! $entry->categoryLink( "| " ) !!} @if ( auth()->check() && auth()->user()->administrator ) | <a href="{{ $entry->route( true ) }}">Edit</a> @endif
+						</div>
+					</div>
+				@endforeach
+	
+			</div>	
+		</div>
+
+	@else
+
+		<div class="row collapse">
+			<div class="small-12 columns">
+				<div class="alert callout">
+					<strong>There are no {{ $blog->name }} entries.</strong>
+				</div>
+				@if ( auth()->check() && auth()->user()->hasPermission( 'admin.blog.entry.add' ) )
+					<a class="primary button" href="{{ route( 'admin.blog.entry.add', $blog->id ) }}" title="Add a {{ $blog->name }} entry">Add a {{ $blog->name }} entry</a>
+				@endif
+			</div>
+		</div>
+
+	@endif
+
+					@include('includes.springtime-otters-breaching-humpbacks-migrating-gray-whales')
+
+					@include('includes.gray-whales-near-santa-cruz')
+
+					@include('includes.good-day-with-gray-whales')
+
+					@include('includes.gray-humpback-whales-springtime-dolphins')
+
+					@include('includes.gray-whales-dolphins-sea-birds')
+
+					@include('includes.winter-wildlife-migration-festival')
+
+					@include('includes.gray-whales-humpbacks-otters-birds')
+
+					@include('includes.northern-right-whale-dolphins')
+					<!-- *************************************** 2016 *************************************** -->
+
+					<h1 id="2016">2016 Sightings</h1>
+
+					@include('includes.2016.winter-solstice-brings-friendly-humpback-whales-lively-dolphins-and-ocean-birds')
+
+					@include('includes.2016.orca-sighting-on-sunday')
+
+					@include('includes.2016.lunge-feeding-whales-sea-lions')
+
+					@include('includes.2016.fall-winter-sightings')
+
+					@include('includes.2016.happy-thanksgiving')
+
+					@include('includes.2016.dolphins-and-humpback-whales-this-week')
+
+					@include('includes.2016.november-humpbacks-near-santa-cruz')
+
+					@include('includes.2016.look-for-spouts-west-cliff-and-seabright')
+
+					@include('includes.2016.october-humpbacks-feeding-dolphins')
+
+					@include('includes.2016.beautiful-day-up-close-with-humpback-whales-video')
+
+					@include('includes.2016.welcome-to-autumn-in-monterey-bay')
+					<!-- End recent-sightings/page/2 -->
+
+					@include('includes.2016.friday-orcas')
+
+					@include('includes.2016.feeding-humpbacks-dolphins-sea-lions-birds')
+
+					@include('includes.2016.rissos-dolphins-baby-bottlenose-humpback-whales')
+
+					@include('includes.2016.orcas-again-today')
+
+					@include('includes.2016.dolphins-blues-humpback-whales-video')
+
+					@include('includes.2016.every-blue-whale-is-here-right-now')
+
+					@include('includes.2016.humpback-blue-fin-whales-in-monterey-bay')
+
+					@include('includes.2016.monterey-bay-has-it-all')
+
+					@include('includes.2016.so-many-whales-blues-and-humpbacks')
+					<!-- End recent-sightings/page/3 -->
+
+					@include('includes.2016.orca-dolphins-humpback-whales-sharks-this-week')
+
+					@include('includes.2016.july-sightings')
+
+					@include('includes.2016.fin-whales-humpbacks-blues-and-rissos-dolphins')
+
+					@include('includes.2016.amazing-encounters-with-orca-and-humpback-whales')
+
+					@include('includes.2016.orcas-again-this-weekend')
+
+					@include('includes.2016.special-sighting-fin-whales')
+
+					@include('includes.2016.20-blue-whales-today')
+
+					@include('includes.2016.blue-whales-are-the-stars-this-week')
+
+					@include('includes.2016.chance-to-see-up-to-3-whale-species')
+					<!-- End recent-sightings/page/4 -->
+
+					@include('includes.2016.blue-whale-near-santa-cruz-dolphins-sharks')
+
+					@include('includes.2016.april-20-gray-whales-and-calves')
+
+					@include('includes.2016.gorgeous-blue-whale-humpback-whales-playful-common-dolphins')
+
+					@include('includes.2016.killer-whales-humpbacks-on-wednesday')
+
+					@include('includes.2016.today-gray-whale-breach')
+
+					@include('includes.2016.new-boat-legacy-joins-our-fleet')
+
+					@include('includes.2016.3010')
+
+					@include('includes.2016.santa-cruz-harbor-is-open')
+
+					@include('includes.2016.spring-is-here')
+
+					@include('includes.2016.grays-humpbacks-common-dolphins')
+					<!-- End recent-sightings/page/5 -->
+
+					@include('includes.2016.gray-whales-1000-dolphins')
+
+					@include('includes.2016.gray-whale-migration')
+					<!-- *************************************** 2015 *************************************** -->
+
+					<h1 id="2015">2015 Sightings</h1>
+					@include('includes.2015.lunge-feeding-whales-leaping-dolphins')
+
+					@include('includes.2015.this-friday-optoutside-with-whale-watching')
+
+					@include('includes.2015.november-whale-watching-monterey')
+
+					@include('includes.2015.video-captures-monterey-bay-wild-orcas-visit-with-whale-watching-boat')
+
+					@include('includes.2015.orcas-active-in-monterey-bay')
+
+					@include('includes.2015.humpbacks-near-santa-cruz-baby-dolphins')
+
+					@include('includes.2015.monterey-bay-amazing-wildlife')
+
+					@include('includes.2015.humpback-whales-bottlenose-dolphins')
+					<!-- End recent-sightings/page/6 -->
+
+					@include('includes.2015.this-week-orcas-whales-and-dolphins')
+
+					@include('includes.2015.monterey-whale-watching-continues')
+
+					@include('includes.2015.september-highlights-orcas-whales-dolphins')
+
+					@include('includes.humpbacks-and-orca-thrill-on-monterey-bay')
+
+					@include('includes.2015.the-whales-of-august-monterey-style')
+
+					@include('includes.2015.entertaining-humpback-whales-over-monterey-canyon')
+
+					@include('includes.2015.santa-cruz-has-whales-dolphins-and-sharks')
+
+					@include('includes.2015.its-shark-week-in-monterey-bay')
+
+					@include('includes.2015.whales-orca-sea-turtles-sharks')
+
+					@include('includes.2015.monterey-bay-humpbacks-here-for-summer')
+					<!-- End recent-sightings/page/7 -->
+
+					@include('includes.2015.world-oceans-day-with-humpback-whales')
+
+					@include('includes.2015.a-day-with-orcas-in-monterey-bay')
+
+					@include('includes.2015.memorial-day-on-monterey-bay')
+
+					@include('includes.2015.friendly-humpback-whales-this-weekend')
+
+					@include('includes.2015.yes-we-have-been-seeing-whales-whale-whales')
+
+					@include('includes.2015.blue-whales-again-over-the-weekend')
+
+					@include('includes.2015.orcas-and-blue-whales')
+
+					@include('includes.2015.whales-dolphins-beautiful-monterey-bay')
+
+					@include('includes.2015.first-blue-whale-of-the-season')
+
+					@include('includes.2015.whales-and-dolphins-on-monday')
+					<!-- End recent-sightings/page/8 -->
+
+					@include('includes.2015.whales-and-dolphins-monterey-bay')
+
+					@include('includes.2015.migrating-gray-whales-put-on-a-show')
+
+					@include('includes.2015.amazing-breaching-humpback-and-gray-whales')
+
+					@include('includes.2015.great-whale-watching-week')
+
+					@include('includes.2015.humpback-whales-near-santa-cruz')
+
+					@include('includes.2015.tuesday-baywatch-report')
+
+					@include('includes.2015.gray-humpback-whales-feed-together')
+
+					@include('includes.2015.humpbacks-wintering-monterey-bay')
+
+					@include('includes.2015.humpback-gray-whales-common-dolphins')
+					<!-- End recent-sightings/page/9 -->
+
+					@include('includes.2015.monterey-whale-sightings-week')
+
+					@include('includes.2015.humpback-gray-whales-just-2-miles')
+
+					@include('includes.2015.gray-whale-migration-alaska-baja-mexico')
+
+					@include('includes.2015.new-year-new-whales')
+					<!-- *************************************** 2014 *************************************** -->
+					<h1 id="2014">2014 Sightings</h1>
+
+					@include('includes.2014.happy-new-year-humpback-whales-remain-active-monterey-bay')
+
+					@include('includes.2014.winter-humpbacks-dolphins-gray-whales')
+
+					@include('includes.2014.holiday-adventure-santa-cruz-whale-watching')
+
+					@include('includes.2014.december-humpback-whales-across-bay')
+
+					@include('includes.2014.humpbacks-dolphins-sunday')
+
+					@include('includes.2014.santa-cruz-whale-watching-sightings-november-8-11')
+					<!-- End recent-sightings/page/10 -->
+
+					@include('includes.2014.great-whale-dolphin-show-beautiful-ocean-conditions')
+
+					@include('includes.2014.whales-still-thick-santa-cruz-monterey')
+
+					@include('includes.2014.humpback-whales-cool-monterey-bay')
+
+					@include('includes.2014.humpback-whales-near-shore-santa-cruz')
+
+					@include('includes.2014.sharing-wonders-monterey-bay-marine-life')
+
+					@include('includes.2014.humpback-whales-dolphins-orcas-active-monterey-bay-2')
+
+					@include('includes.2014.2192')
+
+					@include('includes.2014.dozen-humpbacks-near-boardwalk-santa-cruz')
+
+					@include('includes.2014.humpback-whales-dolphins-orcas-active-monterey-bay')
+
+					@include('includes.2014.whale-watching-monterey-bay-good-gets-right-now')
+
+					@include('includes.2014.lunge-feeding-humpbacks-fill-monterey-bay')
+
+					@include('includes.2014.tuesday-blue-whales-monterey-bay')
+
+					@include('includes.2014.lots-humpbacks-middle-monterey-bay')
+
+					@include('includes.2014.friendly-humpback-whales-near-santa-cruz-monterey-bay')
+
+					@include('includes.2014.whale-watching-humpbacks-monterey-bay')
+
+					@include('includes.2014.orcas-humpback-whales-monterey-canyon')
+					<!-- root dir - not in resent sightings -->
+					@include('includes.2014.rare-finds-monterey-bay-2') 
+
+					<!-- *************************************** 2013 *************************************** -->
+					<h1 id="2013">2013 Sightings</h1>
+					<!-- root dir - not in resent sightings -->
+					@include('includes.2013.a-variety-of-whales')
+
+					@include('includes.2013.thursday-january-17-2013')
+
+@stop

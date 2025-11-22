@@ -1,0 +1,24 @@
+@extends('layouts.frontend')
+
+@section('head')
+<title>{{ pageTitle('Santa Cruz Whale Watching') }}</title>
+@stop
+
+@section('stylesheets')
+@stop
+
+@section('title')
+@stop
+
+@section('content')
+
+					<h6>This page is no longer maintained. Please visit <a href="/recent-sightings" title="Recent Sightings">Recent Sightings</a></h6>
+
+					<h1>Santa Cruz Whale Watching</h1>
+
+					<p>This page is no longer maintained. Please select another page using the Navigation Links. Thank you!</p>
+
+					<p class="book">Book your trip today! <a @include('linkhref')>Book online now</a> or call <em>(831) 427-0230</em></p>
+
+@section('scripts')
+@append

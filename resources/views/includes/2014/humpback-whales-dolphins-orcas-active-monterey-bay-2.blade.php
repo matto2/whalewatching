@@ -1,0 +1,8 @@
+					<h3>Humpback whales, dolphins, orcas active in Monterey Bay</h3>
+					<p><img src="/images/257.jpg" alt="Humpback whales, dolphins, orcas active in Monterey Bay while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+					<p>Thursday, September 4, 2014: Today on Sea Stag Six we saw a pod of 5 orcas, including mama and calf practicing their spy hops together! For quite a while we were also able to observe a group of docile humpbacks surfacing amidst a raft of sea lions. But we have to admit the orcas kind of stole the show.</p>
+					<p>September 3 – 7: Great trips all week! We've been running busy whale watching trips on both our boats – Velocity  and Sea Stag. Every time out we're seeing humpback whales this side of Monterey Bay near Santa Cruz. We watched a pair of humpbacks right off the Lighthouse/ Steamer Lane.  Whales feeding on large schools of anchovies are being seen from the Harbor-mouth along West Cliff Drive all the way to Natural Bridges. As well as the near-shore sightings we see multiple animals offshore 4-6 miles out over the Soquel Hole and deep water canyons Santa Cruz side of Monterey Bay.  Humpbacks near and far can be seen breaching, tail throwing, pec-slapping – We see about 25 whales each trip!</p>
+					<p>Common dolphins have been joining us, bow-riding with the boat out in deeper waters, and we've been seeing bottlenose dolphins right outside the Harbor, too!</p>
+					<p class="cr">Posted on September 8, 2014 by jennyo</p>
+					<p class="book">Book your trip today! <a @include('linkhref')>Book online now</a> or call <em>(831) 427-0230</em></p>
+					<hr>

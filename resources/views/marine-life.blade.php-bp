@@ -1,0 +1,97 @@
+@extends('layouts.frontend')
+
+@section('head')
+<title>{{ pageTitle('Other Marine Life') }}</title>
+@stop
+
+@section('stylesheets')
+@stop
+
+@section('title')
+@stop
+
+@section('content')
+
+					<h1>Other Marine Life</h1>
+
+					<h2>CALIFORNIA SEA LION: COMMON</h2>
+
+					<p class="mb0"><img src="/images/sealions.jpg" alt="Sea Lions while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+					<p class="i">California Sea Lion Zalophus californianus</p>
+					<p>The California Sea Lion is one of the most common marine mammals in the bay, both near shore and in the outer bay. They often can be seen hauled out on rocky outcroppings, islands and buoys. Adult Sea lions can weigh 800 lbs. They are very intelligent and are often seen following behind Salmon Fishing boats waiting to snatch a fish from their line.</p>
+					<p>Sea lions are very mobile on shore due to their long front flippers. They are usually the animals seen performing in marine theme parks.</p>
+
+					<div class="callout primary">
+						<h3>Great White Shark Encounters (2 Hours)</h3>
+
+						<p>Come view the beautiful Monterey Bay Marine Sanctuary aboard Velocity or Legacy! This trip focuses on viewing the abundant marine wildlife that inhabits our nearshore waters of northern Monterey Bay. Depending on the time of year your trip may include sightings of several species of Seals &amp; Sea Lions, Sea Otters, Dolphins, marine birds, and even whales &amp; great white sharks!</p>
+						<p>Trips are led by Marine Biologists and expert Naturalists.  Historical points of interest are narrated by your captain during this 2 hour trip.</p>
+
+						<p class="mb0">Adult $48</p>
+						<p class="mb0">Child $31 (age 4-13)</p>
+						<p>Infant (3 &amp; Under) FREE</p>
+						<p>2 Hour Trips <em>Late Spring through Late Fall</em></p>
+					</div>
+
+					<h3>SEA OTTER: COMMON</h3>
+					<p class="mb0"><img src="/images/otter.jpg" alt="Sea Otter while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+					<p class="i">Southern (Californian) Sea Otter Enhydra lutris nereis</p>
+
+					<h3>HARBOR SEAL: COMMON</h3>
+					<p class="mb0"><img src="/images/harbor.jpg" alt="Harbor Seal while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+					<p class="i">Harbor Seal Phoca vitulina</p>
+					<p>Easily distinguishable Harbor seals have dark fur that is mottled with light spots, or light fur that is mottled with dark spots. They have short pectoral flippers and are clumsy on shore.</p>
+
+					<div class="callout primary">
+						<h3>INNER BAY/CALM WATER: <a href="monterey-ca-whale-watching">Monterey</a> Sanctuary Scenic Bay Cruise – 1 hour</h3>
+
+						<p>Our best value and very popular with families, this calm water cruise offers spectacular views of our coastline and local marine life, usually including sea otters, sea lions and occasionally dolphins. Highlights of this tour include the Giant Kelp Forest, Seal Island, world famous Steamer’s Lane surfing spot, the beautiful Santa Cruz Yacht Harbor and the venerable Santa Cruz Beach Boardwalk. Bring your camera!</p>
+
+						<p class="mb0">$28 Adults</p>
+						<p>$18 Children under 14</p>
+					</div>
+
+					<h4>ELEPHANT SEAL: PERIODICALLY COMMON</h4>
+
+					<p class="mb0"><img src="/images/northern.jpg" alt="Northern Elephant Seal while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+
+					<p class="i">Northern Elephant Seal Mirounga angustirostris</p>
+
+					<p>18 miles north of Santa Cruz, Ano Nuevo State Reserve is where Elephant seals return every winter to mate. It is rare to see them at sea. They are very deep diving feeding animals. Males have a distinct elongated snout.</p>
+
+					<p>Elephant seals derive their name from their great size and from the male’s large proboscis, which is used in making extraordinarily loud roaring noises, especially during the mating competition. There is a great sexual dimorphism in size, with the males (bulls) reaching five meters in length, much bigger than the females (cows), who average about three meters. The males average 16 ft (5 m) and 5,000 lb (2,300 kg), while the females average 1,400 lb (640 kg). Correspondingly, there is a highly polygamous mating system, with a successful male able to impregnate up to 50 females in one season. Beginning in the 1700s Northern elephant seals were hunted extensively almost to extinction by the end of the 19th century, being prized for oil that could be made from their blubber, and the population may have fallen as low as 100 to 1000. Finding refuge in Mexican waters, by the turn of the century, there was only a sole surviving rookery, on Guadalupe Island, Mexico; and this colony was granted protection by the Mexican government. Since the early 20th century, they have been protected by law in both Mexico and in the United States. Subsequently the U.S. protection was strengthened after passage of the Marine Mammal Protection Act, and numbers have now recovered to over 100,000.</p>
+
+					<h4>STELLAR SEA LION: RARE</h4>
+
+					<p>These are the largest of all pinnipeds. There is an occasional Stellar sea lion that can be seen hauled out on Seal Rock off of Santa Cruz Point.</p>
+
+					<h4>SUN FISH (Mola Mola): COMMON</h4>
+
+					<p class="mb0"><img src="/images/sun.jpg" alt="Sun Fish while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+
+					<p class="i">Sun Fish Mola mola</p>
+
+					<p>This odd circular shaped fish can be seen in summer mostly but can be seen anytime. It feeds on Plankton. The ocean sunfish, Mola mola, or common mola, is the heaviest known bony fish in the world. It has an average adult weight of one metric ton (2,200 lbs). The species is native to tropical and temperate waters around the globe. It resembles a fish head with a tail, and its main body is flattened laterally. Sunfish can be as tall as they are long when their dorsal and ventral fins are extended.</p>
+
+					<h4>LEATHER BACK SEA TURTLE: RARE</h4>
+
+					<p class="mb0"><img src="/images/leather.jpg" alt="Leather Back Turtle while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+
+					<p class="i">Leatherback Turtle Dermochelys coriacea</p>
+
+					<p>WOW – These turtles can get 6-7′ long. They can occasionally be seen feeding in the summer when the jellyfish are in.</p>
+
+					<p>The <em>leatherback turtle</em> (Dermochelys coriacea) is the largest of all living sea turtles and the fourth largest reptile behind three crocodilians.It is the only living species in the genus <em>Dermochelys.</em> It can easily be differentiated from other modern sea turtles by its lack of a bony shell. Instead, its carapace is covered by skin and oily flesh. Dermochelys coriacea is the only extant member of the family Dermochelyidae. Instead of teeth the Leatherback turtle has points on its upper lip. It also has backwards spines in its throat to help it swallow food. Leatherback turtles can dive to depths as great as 4200 feet (1,280 meters).
+
+
+					<h4>SHARKS: FAIRLY COMMON</h4>
+					<p>Blue sharks are somewhat common in the summer. White sharks occasionally can be seen at anytime. They feed on large fish and pinnipeds.</p>
+
+					<h4>BASKING SHARK: RARE</h4>
+					<p>Basking sharks can reach 25′, are dark gray in color and are plankton feeders.</p>
+
+					<p class="book">Book your trip today! <a @include('linkhref')>Book online now</a> or call <em>(831) 427-0230</em></p>
+@stop
+
+@section('scripts')
+@append

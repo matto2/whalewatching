@@ -1,0 +1,17 @@
+					<h3>Santa Cruz Whale Watching Sightings November 8-11</h3>
+					<p><img src="/images/239.jpg" alt="Dolphins while Whale Watching in Monterey Bay California with Stagnaro Charters"></p>
+					<p>Monterey Bay is alive with marine life−humpback whales, dolphins, sea lions, birds, even mola-mola! Each day is a little bit different, but always amazing and memorable. Soon we will start looking for gray whales migrating southward from Alaska to Baja California. For now we'll keep enjoying humpback whales, California sea lions, otters and gorgeous marine birds feeding in the Bay.</p>
+					<p>Saturday: We spotted 10 humpback whales lunge feeding in the Bay among rafts and rafts of California sea lions hoping to grab a few fish for lunch.</p>
+					<img src="/images/240.jpg" alt="xxxxxxxxxxx while Whale Watching in Monterey Bay California with Stagnaro Charters">
+					<p class="cr">Santa Cruz Whale Watching, Monterey Bay, California | Photo: Michael Nelson</p>
+					<p>Sunday: We were delighted to see bottlenose dolphins frolicking in Santa Cruz before we ventured out into the foggy morning. We had to search but found several humpback whales with some</p>
+					<p> Monday: To start the trip we saw 500 common dolphins just outside the harbor! They swam alongside the boat and were just spectacular to see. We found 10 humpback whales scattered throughout the Bay. One of them breached pretty near to the boat! Also spotted – a big old mola-mola aka sunfish.</p>
+					<p> Tuesday: Lunge feeding humpback whales just 2-3 miles out from Santa Cruz. We found more whales further out, near the Soquel Hole about half-way between Santa Cruz and Moss Landing. We had great views of common surface behaviors, including head slap. Everyone enjoyed flat calm ocean conditions on Monterey Bay.</p>
+					<img src="/images/241.jpg" alt="xxxxxxxxxxx while Whale Watching in Monterey Bay California with Stagnaro Charters">
+					<p class="cr">Santa Cruz Whale Watching, Monterey Bay, California | Photo: Michael Nelson</p>
+					<p>Gray whales will soon be coming through our waters on their annual migration from Alaska feeding grounds, to their mating and calving grounds off the coast of Baja California. Each year scientists along with dedicated enthusiast take a count of this once-endangered whale species. Gray whale spouts are easily visible from land as they try to stay along the coast line to avoid predators in the open waters. Counting efforts are underway at Big Sur. According to this article, the population of gray whales is rising:</p>
+					<p>"At their lowest back in the last century, there were probably around 3,000 to 5,000 gray whales. … But they've recovered and stabilized at around 20,000." – Dave Weller, NOAA</p>
+					<p><a href="https://blog.trekaroo.com/whale-watching-with-kids/" title="Here is a link to a comprehensive guide to whale watching with kids" target="_blank">Here is a link to a comprehensive guide to whale watching with kids</a> along the US west coast, from Washington to Southern California. Read about the many species of whales and dolphins living and thriving in the Pacific Ocean and National Sanctuaries along the Pacific coast.</p>
+					<p class="cr">This entry was posted on November 12, 2014 by jennyo.</p>
+					<p class="book">Book your trip today! <a @include('linkhref')>Book online now</a> or call <em>(831) 427-0230</em></p>
+					<hr>

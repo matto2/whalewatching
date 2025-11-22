@@ -1,0 +1,340 @@
+<?php
+ 
+	use Illuminate\Database\Seeder;
+	use Illuminate\Database\Eloquent\Model;
+	use App\Models\System\Country;
+	use App\Models\System\Setting;
+	use App\Models\System\State;
+
+	class SystemSeeder extends Seeder {
+ 
+		public function run() {
+
+			$shipMethods = [
+				'default' => 'usps',
+				'methods' => [
+					'fedex' => [
+						'name' => 'FedEx',
+						'trackingLink' => 'http://www.fedex.com/Tracking?action=track&tracknumbers={tn}',
+					],
+					'ups' => [
+						'name' => 'UPS',
+						'trackingLink' => 'http://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={tn}',
+					],
+					'usps' => [
+						'name' => 'US Postal Service',
+						'trackingLink' => 'https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1={tn}',
+					],
+				],
+			];
+
+			Setting::create([ 'key' => 'shippingMethods', 'value' => $shipMethods ]);
+
+			Country::create([ 'active' => false, 'code' => 'AF', 'name' => "Afghanistan" ]);
+			Country::create([ 'active' => false, 'code' => 'AX', 'name' => "Åland Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'AL', 'name' => "Albania" ]);
+			Country::create([ 'active' => false, 'code' => 'DZ', 'name' => "Algeria" ]);
+			Country::create([ 'active' => false, 'code' => 'AS', 'name' => "American Samoa" ]);
+			Country::create([ 'active' => false, 'code' => 'AD', 'name' => "Andorra" ]);
+			Country::create([ 'active' => false, 'code' => 'AO', 'name' => "Angola" ]);
+			Country::create([ 'active' => false, 'code' => 'AI', 'name' => "Anguilla" ]);
+			Country::create([ 'active' => false, 'code' => 'AQ', 'name' => "Antarctica" ]);
+			Country::create([ 'active' => false, 'code' => 'AG', 'name' => "Antigua and Barbuda" ]);
+			Country::create([ 'active' => false, 'code' => 'AR', 'name' => "Argentina" ]);
+			Country::create([ 'active' => false, 'code' => 'AM', 'name' => "Armenia" ]);
+			Country::create([ 'active' => false, 'code' => 'AW', 'name' => "Aruba" ]);
+			Country::create([ 'active' => false, 'code' => 'AU', 'name' => "Australia" ]);
+			Country::create([ 'active' => false, 'code' => 'AT', 'name' => "Austria" ]);
+			Country::create([ 'active' => false, 'code' => 'AZ', 'name' => "Azerbaijan" ]);
+			Country::create([ 'active' => false, 'code' => 'BS', 'name' => "Bahamas" ]);
+			Country::create([ 'active' => false, 'code' => 'BH', 'name' => "Bahrain" ]);
+			Country::create([ 'active' => false, 'code' => 'BD', 'name' => "Bangladesh" ]);
+			Country::create([ 'active' => false, 'code' => 'BB', 'name' => "Barbados" ]);
+			Country::create([ 'active' => false, 'code' => 'BY', 'name' => "Belarus" ]);
+			Country::create([ 'active' => false, 'code' => 'BE', 'name' => "Belgium" ]);
+			Country::create([ 'active' => false, 'code' => 'BZ', 'name' => "Belize" ]);
+			Country::create([ 'active' => false, 'code' => 'BJ', 'name' => "Benin" ]);
+			Country::create([ 'active' => false, 'code' => 'BM', 'name' => "Bermuda" ]);
+			Country::create([ 'active' => false, 'code' => 'BT', 'name' => "Bhutan" ]);
+			Country::create([ 'active' => false, 'code' => 'BO', 'name' => "Bolivia, Plurinational State of" ]);
+			Country::create([ 'active' => false, 'code' => 'BQ', 'name' => "Bonaire, Sint Eustatius and Saba" ]);
+			Country::create([ 'active' => false, 'code' => 'BA', 'name' => "Bosnia and Herzegovina" ]);
+			Country::create([ 'active' => false, 'code' => 'BW', 'name' => "Botswana" ]);
+			Country::create([ 'active' => false, 'code' => 'BV', 'name' => "Bouvet Island" ]);
+			Country::create([ 'active' => false, 'code' => 'BR', 'name' => "Brazil" ]);
+			Country::create([ 'active' => false, 'code' => 'IO', 'name' => "British Indian Ocean Territory" ]);
+			Country::create([ 'active' => false, 'code' => 'BN', 'name' => "Brunei Darussalam" ]);
+			Country::create([ 'active' => false, 'code' => 'BG', 'name' => "Bulgaria" ]);
+			Country::create([ 'active' => false, 'code' => 'BF', 'name' => "Burkina Faso" ]);
+			Country::create([ 'active' => false, 'code' => 'BI', 'name' => "Burundi" ]);
+			Country::create([ 'active' => false, 'code' => 'KH', 'name' => "Cambodia" ]);
+			Country::create([ 'active' => false, 'code' => 'CM', 'name' => "Cameroon" ]);
+			Country::create([ 'active' => true,  'code' => 'CA', 'name' => "Canada" ]);
+			Country::create([ 'active' => false, 'code' => 'CV', 'name' => "Cape Verde" ]);
+			Country::create([ 'active' => false, 'code' => 'KY', 'name' => "Cayman Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'CF', 'name' => "Central African Republic" ]);
+			Country::create([ 'active' => false, 'code' => 'TD', 'name' => "Chad" ]);
+			Country::create([ 'active' => false, 'code' => 'CL', 'name' => "Chile" ]);
+			Country::create([ 'active' => false, 'code' => 'CN', 'name' => "China" ]);
+			Country::create([ 'active' => false, 'code' => 'CX', 'name' => "Christmas Island" ]);
+			Country::create([ 'active' => false, 'code' => 'CC', 'name' => "Cocos (Keeling) Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'CO', 'name' => "Colombia" ]);
+			Country::create([ 'active' => false, 'code' => 'KM', 'name' => "Comoros" ]);
+			Country::create([ 'active' => false, 'code' => 'CG', 'name' => "Congo" ]);
+			Country::create([ 'active' => false, 'code' => 'CD', 'name' => "Congo, the Democratic Republic of the" ]);
+			Country::create([ 'active' => false, 'code' => 'CK', 'name' => "Cook Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'CR', 'name' => "Costa Rica" ]);
+			Country::create([ 'active' => false, 'code' => 'CI', 'name' => "Côte d'Ivoire" ]);
+			Country::create([ 'active' => false, 'code' => 'HR', 'name' => "Croatia" ]);
+			Country::create([ 'active' => false, 'code' => 'CU', 'name' => "Cuba" ]);
+			Country::create([ 'active' => false, 'code' => 'CW', 'name' => "Curaçao" ]);
+			Country::create([ 'active' => false, 'code' => 'CY', 'name' => "Cyprus" ]);
+			Country::create([ 'active' => false, 'code' => 'CZ', 'name' => "Czech Republic" ]);
+			Country::create([ 'active' => false, 'code' => 'DK', 'name' => "Denmark" ]);
+			Country::create([ 'active' => false, 'code' => 'DJ', 'name' => "Djibouti" ]);
+			Country::create([ 'active' => false, 'code' => 'DM', 'name' => "Dominica" ]);
+			Country::create([ 'active' => false, 'code' => 'DO', 'name' => "Dominican Republic" ]);
+			Country::create([ 'active' => false, 'code' => 'EC', 'name' => "Ecuador" ]);
+			Country::create([ 'active' => false, 'code' => 'EG', 'name' => "Egypt" ]);
+			Country::create([ 'active' => false, 'code' => 'SV', 'name' => "El Salvador" ]);
+			Country::create([ 'active' => false, 'code' => 'GQ', 'name' => "Equatorial Guinea" ]);
+			Country::create([ 'active' => false, 'code' => 'ER', 'name' => "Eritrea" ]);
+			Country::create([ 'active' => false, 'code' => 'EE', 'name' => "Estonia" ]);
+			Country::create([ 'active' => false, 'code' => 'ET', 'name' => "Ethiopia" ]);
+			Country::create([ 'active' => false, 'code' => 'FK', 'name' => "Falkland Islands (Malvinas)" ]);
+			Country::create([ 'active' => false, 'code' => 'FO', 'name' => "Faroe Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'FJ', 'name' => "Fiji" ]);
+			Country::create([ 'active' => false, 'code' => 'FI', 'name' => "Finland" ]);
+			Country::create([ 'active' => false, 'code' => 'FR', 'name' => "France" ]);
+			Country::create([ 'active' => false, 'code' => 'GF', 'name' => "French Guiana" ]);
+			Country::create([ 'active' => false, 'code' => 'PF', 'name' => "French Polynesia" ]);
+			Country::create([ 'active' => false, 'code' => 'TF', 'name' => "French Southern Territories" ]);
+			Country::create([ 'active' => false, 'code' => 'GA', 'name' => "Gabon" ]);
+			Country::create([ 'active' => false, 'code' => 'GM', 'name' => "Gambia" ]);
+			Country::create([ 'active' => false, 'code' => 'GE', 'name' => "Georgia" ]);
+			Country::create([ 'active' => false, 'code' => 'DE', 'name' => "Germany" ]);
+			Country::create([ 'active' => false, 'code' => 'GH', 'name' => "Ghana" ]);
+			Country::create([ 'active' => false, 'code' => 'GI', 'name' => "Gibraltar" ]);
+			Country::create([ 'active' => false, 'code' => 'GR', 'name' => "Greece" ]);
+			Country::create([ 'active' => false, 'code' => 'GL', 'name' => "Greenland" ]);
+			Country::create([ 'active' => false, 'code' => 'GD', 'name' => "Grenada" ]);
+			Country::create([ 'active' => false, 'code' => 'GP', 'name' => "Guadeloupe" ]);
+			Country::create([ 'active' => false, 'code' => 'GU', 'name' => "Guam" ]);
+			Country::create([ 'active' => false, 'code' => 'GT', 'name' => "Guatemala" ]);
+			Country::create([ 'active' => false, 'code' => 'GG', 'name' => "Guernsey" ]);
+			Country::create([ 'active' => false, 'code' => 'GN', 'name' => "Guinea" ]);
+			Country::create([ 'active' => false, 'code' => 'GW', 'name' => "Guinea-Bissau" ]);
+			Country::create([ 'active' => false, 'code' => 'GY', 'name' => "Guyana" ]);
+			Country::create([ 'active' => false, 'code' => 'HT', 'name' => "Haiti" ]);
+			Country::create([ 'active' => false, 'code' => 'HM', 'name' => "Heard Island and McDonald Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'VA', 'name' => "Holy See (Vatican City State)" ]);
+			Country::create([ 'active' => false, 'code' => 'HN', 'name' => "Honduras" ]);
+			Country::create([ 'active' => false, 'code' => 'HK', 'name' => "Hong Kong" ]);
+			Country::create([ 'active' => false, 'code' => 'HU', 'name' => "Hungary" ]);
+			Country::create([ 'active' => false, 'code' => 'IS', 'name' => "Iceland" ]);
+			Country::create([ 'active' => false, 'code' => 'IN', 'name' => "India" ]);
+			Country::create([ 'active' => false, 'code' => 'ID', 'name' => "Indonesia" ]);
+			Country::create([ 'active' => false, 'code' => 'IR', 'name' => "Iran, Islamic Republic of" ]);
+			Country::create([ 'active' => false, 'code' => 'IQ', 'name' => "Iraq" ]);
+			Country::create([ 'active' => false, 'code' => 'IE', 'name' => "Ireland" ]);
+			Country::create([ 'active' => false, 'code' => 'IM', 'name' => "Isle of Man" ]);
+			Country::create([ 'active' => false, 'code' => 'IL', 'name' => "Israel" ]);
+			Country::create([ 'active' => false, 'code' => 'IT', 'name' => "Italy" ]);
+			Country::create([ 'active' => false, 'code' => 'JM', 'name' => "Jamaica" ]);
+			Country::create([ 'active' => false, 'code' => 'JP', 'name' => "Japan" ]);
+			Country::create([ 'active' => false, 'code' => 'JE', 'name' => "Jersey" ]);
+			Country::create([ 'active' => false, 'code' => 'JO', 'name' => "Jordan" ]);
+			Country::create([ 'active' => false, 'code' => 'KZ', 'name' => "Kazakhstan" ]);
+			Country::create([ 'active' => false, 'code' => 'KE', 'name' => "Kenya" ]);
+			Country::create([ 'active' => false, 'code' => 'KI', 'name' => "Kiribati" ]);
+			Country::create([ 'active' => false, 'code' => 'KP', 'name' => "Korea, Democratic People's Republic of" ]);
+			Country::create([ 'active' => false, 'code' => 'KR', 'name' => "Korea, Republic of" ]);
+			Country::create([ 'active' => false, 'code' => 'KW', 'name' => "Kuwait" ]);
+			Country::create([ 'active' => false, 'code' => 'KG', 'name' => "Kyrgyzstan" ]);
+			Country::create([ 'active' => false, 'code' => 'LA', 'name' => "Lao People's Democratic Republic" ]);
+			Country::create([ 'active' => false, 'code' => 'LV', 'name' => "Latvia" ]);
+			Country::create([ 'active' => false, 'code' => 'LB', 'name' => "Lebanon" ]);
+			Country::create([ 'active' => false, 'code' => 'LS', 'name' => "Lesotho" ]);
+			Country::create([ 'active' => false, 'code' => 'LR', 'name' => "Liberia" ]);
+			Country::create([ 'active' => false, 'code' => 'LY', 'name' => "Libya" ]);
+			Country::create([ 'active' => false, 'code' => 'LI', 'name' => "Liechtenstein" ]);
+			Country::create([ 'active' => false, 'code' => 'LT', 'name' => "Lithuania" ]);
+			Country::create([ 'active' => false, 'code' => 'LU', 'name' => "Luxembourg" ]);
+			Country::create([ 'active' => false, 'code' => 'MO', 'name' => "Macao" ]);
+			Country::create([ 'active' => false, 'code' => 'MK', 'name' => "Macedonia, the former Yugoslav Republic of" ]);
+			Country::create([ 'active' => false, 'code' => 'MG', 'name' => "Madagascar" ]);
+			Country::create([ 'active' => false, 'code' => 'MW', 'name' => "Malawi" ]);
+			Country::create([ 'active' => false, 'code' => 'MY', 'name' => "Malaysia" ]);
+			Country::create([ 'active' => false, 'code' => 'MV', 'name' => "Maldives" ]);
+			Country::create([ 'active' => false, 'code' => 'ML', 'name' => "Mali" ]);
+			Country::create([ 'active' => false, 'code' => 'MT', 'name' => "Malta" ]);
+			Country::create([ 'active' => false, 'code' => 'MH', 'name' => "Marshall Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'MQ', 'name' => "Martinique" ]);
+			Country::create([ 'active' => false, 'code' => 'MR', 'name' => "Mauritania" ]);
+			Country::create([ 'active' => false, 'code' => 'MU', 'name' => "Mauritius" ]);
+			Country::create([ 'active' => false, 'code' => 'YT', 'name' => "Mayotte" ]);
+			Country::create([ 'active' => false, 'code' => 'MX', 'name' => "Mexico" ]);
+			Country::create([ 'active' => false, 'code' => 'FM', 'name' => "Micronesia, Federated States of" ]);
+			Country::create([ 'active' => false, 'code' => 'MD', 'name' => "Moldova, Republic of" ]);
+			Country::create([ 'active' => false, 'code' => 'MC', 'name' => "Monaco" ]);
+			Country::create([ 'active' => false, 'code' => 'MN', 'name' => "Mongolia" ]);
+			Country::create([ 'active' => false, 'code' => 'ME', 'name' => "Montenegro" ]);
+			Country::create([ 'active' => false, 'code' => 'MS', 'name' => "Montserrat" ]);
+			Country::create([ 'active' => false, 'code' => 'MA', 'name' => "Morocco" ]);
+			Country::create([ 'active' => false, 'code' => 'MZ', 'name' => "Mozambique" ]);
+			Country::create([ 'active' => false, 'code' => 'MM', 'name' => "Myanmar" ]);
+			Country::create([ 'active' => false, 'code' => 'NA', 'name' => "Namibia" ]);
+			Country::create([ 'active' => false, 'code' => 'NR', 'name' => "Nauru" ]);
+			Country::create([ 'active' => false, 'code' => 'NP', 'name' => "Nepal" ]);
+			Country::create([ 'active' => false, 'code' => 'NL', 'name' => "Netherlands" ]);
+			Country::create([ 'active' => false, 'code' => 'NC', 'name' => "New Caledonia" ]);
+			Country::create([ 'active' => false, 'code' => 'NZ', 'name' => "New Zealand" ]);
+			Country::create([ 'active' => false, 'code' => 'NI', 'name' => "Nicaragua" ]);
+			Country::create([ 'active' => false, 'code' => 'NE', 'name' => "Niger" ]);
+			Country::create([ 'active' => false, 'code' => 'NG', 'name' => "Nigeria" ]);
+			Country::create([ 'active' => false, 'code' => 'NU', 'name' => "Niue" ]);
+			Country::create([ 'active' => false, 'code' => 'NF', 'name' => "Norfolk Island" ]);
+			Country::create([ 'active' => false, 'code' => 'MP', 'name' => "Northern Mariana Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'NO', 'name' => "Norway" ]);
+			Country::create([ 'active' => false, 'code' => 'OM', 'name' => "Oman" ]);
+			Country::create([ 'active' => false, 'code' => 'PK', 'name' => "Pakistan" ]);
+			Country::create([ 'active' => false, 'code' => 'PW', 'name' => "Palau" ]);
+			Country::create([ 'active' => false, 'code' => 'PS', 'name' => "Palestinian Territory, Occupied" ]);
+			Country::create([ 'active' => false, 'code' => 'PA', 'name' => "Panama" ]);
+			Country::create([ 'active' => false, 'code' => 'PG', 'name' => "Papua New Guinea" ]);
+			Country::create([ 'active' => false, 'code' => 'PY', 'name' => "Paraguay" ]);
+			Country::create([ 'active' => false, 'code' => 'PE', 'name' => "Peru" ]);
+			Country::create([ 'active' => false, 'code' => 'PH', 'name' => "Philippines" ]);
+			Country::create([ 'active' => false, 'code' => 'PN', 'name' => "Pitcairn" ]);
+			Country::create([ 'active' => false, 'code' => 'PL', 'name' => "Poland" ]);
+			Country::create([ 'active' => false, 'code' => 'PT', 'name' => "Portugal" ]);
+			Country::create([ 'active' => false, 'code' => 'PR', 'name' => "Puerto Rico" ]);
+			Country::create([ 'active' => false, 'code' => 'QA', 'name' => "Qatar" ]);
+			Country::create([ 'active' => false, 'code' => 'RE', 'name' => "Réunion" ]);
+			Country::create([ 'active' => false, 'code' => 'RO', 'name' => "Romania" ]);
+			Country::create([ 'active' => false, 'code' => 'RU', 'name' => "Russian Federation" ]);
+			Country::create([ 'active' => false, 'code' => 'RW', 'name' => "Rwanda" ]);
+			Country::create([ 'active' => false, 'code' => 'BL', 'name' => "Saint Barthélemy" ]);
+			Country::create([ 'active' => false, 'code' => 'SH', 'name' => "Saint Helena, Ascension and Tristan da Cunha" ]);
+			Country::create([ 'active' => false, 'code' => 'KN', 'name' => "Saint Kitts and Nevis" ]);
+			Country::create([ 'active' => false, 'code' => 'LC', 'name' => "Saint Lucia" ]);
+			Country::create([ 'active' => false, 'code' => 'MF', 'name' => "Saint Martin (French part)" ]);
+			Country::create([ 'active' => false, 'code' => 'PM', 'name' => "Saint Pierre and Miquelon" ]);
+			Country::create([ 'active' => false, 'code' => 'VC', 'name' => "Saint Vincent and the Grenadines" ]);
+			Country::create([ 'active' => false, 'code' => 'WS', 'name' => "Samoa" ]);
+			Country::create([ 'active' => false, 'code' => 'SM', 'name' => "San Marino" ]);
+			Country::create([ 'active' => false, 'code' => 'ST', 'name' => "Sao Tome and Principe" ]);
+			Country::create([ 'active' => false, 'code' => 'SA', 'name' => "Saudi Arabia" ]);
+			Country::create([ 'active' => false, 'code' => 'SN', 'name' => "Senegal" ]);
+			Country::create([ 'active' => false, 'code' => 'RS', 'name' => "Serbia" ]);
+			Country::create([ 'active' => false, 'code' => 'SC', 'name' => "Seychelles" ]);
+			Country::create([ 'active' => false, 'code' => 'SL', 'name' => "Sierra Leone" ]);
+			Country::create([ 'active' => false, 'code' => 'SG', 'name' => "Singapore" ]);
+			Country::create([ 'active' => false, 'code' => 'SX', 'name' => "Sint Maarten (Dutch part)" ]);
+			Country::create([ 'active' => false, 'code' => 'SK', 'name' => "Slovakia" ]);
+			Country::create([ 'active' => false, 'code' => 'SI', 'name' => "Slovenia" ]);
+			Country::create([ 'active' => false, 'code' => 'SB', 'name' => "Solomon Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'SO', 'name' => "Somalia" ]);
+			Country::create([ 'active' => false, 'code' => 'ZA', 'name' => "South Africa" ]);
+			Country::create([ 'active' => false, 'code' => 'GS', 'name' => "South Georgia and the South Sandwich Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'SS', 'name' => "South Sudan" ]);
+			Country::create([ 'active' => false, 'code' => 'ES', 'name' => "Spain" ]);
+			Country::create([ 'active' => false, 'code' => 'LK', 'name' => "Sri Lanka" ]);
+			Country::create([ 'active' => false, 'code' => 'SD', 'name' => "Sudan" ]);
+			Country::create([ 'active' => false, 'code' => 'SR', 'name' => "Suriname" ]);
+			Country::create([ 'active' => false, 'code' => 'SJ', 'name' => "Svalbard and Jan Mayen" ]);
+			Country::create([ 'active' => false, 'code' => 'SZ', 'name' => "Swaziland" ]);
+			Country::create([ 'active' => false, 'code' => 'SE', 'name' => "Sweden" ]);
+			Country::create([ 'active' => false, 'code' => 'CH', 'name' => "Switzerland" ]);
+			Country::create([ 'active' => false, 'code' => 'SY', 'name' => "Syrian Arab Republic" ]);
+			Country::create([ 'active' => false, 'code' => 'TW', 'name' => "Taiwan, Province of China" ]);
+			Country::create([ 'active' => false, 'code' => 'TJ', 'name' => "Tajikistan" ]);
+			Country::create([ 'active' => false, 'code' => 'TZ', 'name' => "Tanzania, United Republic of" ]);
+			Country::create([ 'active' => false, 'code' => 'TH', 'name' => "Thailand" ]);
+			Country::create([ 'active' => false, 'code' => 'TL', 'name' => "Timor-Leste" ]);
+			Country::create([ 'active' => false, 'code' => 'TG', 'name' => "Togo" ]);
+			Country::create([ 'active' => false, 'code' => 'TK', 'name' => "Tokelau" ]);
+			Country::create([ 'active' => false, 'code' => 'TO', 'name' => "Tonga" ]);
+			Country::create([ 'active' => false, 'code' => 'TT', 'name' => "Trinidad and Tobago" ]);
+			Country::create([ 'active' => false, 'code' => 'TN', 'name' => "Tunisia" ]);
+			Country::create([ 'active' => false, 'code' => 'TR', 'name' => "Turkey" ]);
+			Country::create([ 'active' => false, 'code' => 'TM', 'name' => "Turkmenistan" ]);
+			Country::create([ 'active' => false, 'code' => 'TC', 'name' => "Turks and Caicos Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'TV', 'name' => "Tuvalu" ]);
+			Country::create([ 'active' => false, 'code' => 'UG', 'name' => "Uganda" ]);
+			Country::create([ 'active' => false, 'code' => 'UA', 'name' => "Ukraine" ]);
+			Country::create([ 'active' => false, 'code' => 'AE', 'name' => "United Arab Emirates" ]);
+			Country::create([ 'active' => false, 'code' => 'GB', 'name' => "United Kingdom" ]);
+			Country::create([ 'active' => true,  'code' => 'US', 'name' => "United States" ]);
+			Country::create([ 'active' => false, 'code' => 'UM', 'name' => "United States Minor Outlying Islands" ]);
+			Country::create([ 'active' => false, 'code' => 'UY', 'name' => "Uruguay" ]);
+			Country::create([ 'active' => false, 'code' => 'UZ', 'name' => "Uzbekistan" ]);
+			Country::create([ 'active' => false, 'code' => 'VU', 'name' => "Vanuatu" ]);
+			Country::create([ 'active' => false, 'code' => 'VE', 'name' => "Venezuela, Bolivarian Republic of" ]);
+			Country::create([ 'active' => false, 'code' => 'VN', 'name' => "Viet Nam" ]);
+			Country::create([ 'active' => false, 'code' => 'VG', 'name' => "Virgin Islands, British" ]);
+			Country::create([ 'active' => false, 'code' => 'VI', 'name' => "Virgin Islands, U.S." ]);
+			Country::create([ 'active' => false, 'code' => 'WF', 'name' => "Wallis and Futuna" ]);
+			Country::create([ 'active' => false, 'code' => 'EH', 'name' => "Western Sahara" ]);
+			Country::create([ 'active' => false, 'code' => 'YE', 'name' => "Yemen" ]);
+			Country::create([ 'active' => false, 'code' => 'ZM', 'name' => "Zambia" ]);
+			Country::create([ 'active' => false, 'code' => 'ZW', 'name' => "Zimbabwe" ]);
+
+			State::create([ 'country_id' => 236, 'abbreviation' => 'AL', 'name' => 'Alabama' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'AK', 'name' => 'Alaska' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'AZ', 'name' => 'Arizona' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'AR', 'name' => 'Arkansas' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'CA', 'name' => 'California' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'CO', 'name' => 'Colorado' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'CT', 'name' => 'Connecticut' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'DE', 'name' => 'Delaware' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'DC', 'name' => 'District Of Columbia' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'FL', 'name' => 'Florida' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'GA', 'name' => 'Georgia' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'HI', 'name' => 'Hawaii' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'ID', 'name' => 'Idaho' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'IL', 'name' => 'Illinois' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'IN', 'name' => 'Indiana' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'IA', 'name' => 'Iowa' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'KS', 'name' => 'Kansas' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'KY', 'name' => 'Kentucky' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'LA', 'name' => 'Louisiana' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'ME', 'name' => 'Maine' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'MD', 'name' => 'Maryland' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'MA', 'name' => 'Massachusetts' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'MI', 'name' => 'Michigan' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'MN', 'name' => 'Minnesota' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'MS', 'name' => 'Mississippi' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'MO', 'name' => 'Missouri' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'MT', 'name' => 'Montana' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'NE', 'name' => 'Nebraska' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'NV', 'name' => 'Nevada' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'NH', 'name' => 'New Hampshire' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'NJ', 'name' => 'New Jersey' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'NM', 'name' => 'New Mexico' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'NY', 'name' => 'New York' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'NC', 'name' => 'North Carolina' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'ND', 'name' => 'North Dakota' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'OH', 'name' => 'Ohio' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'OK', 'name' => 'Oklahoma' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'OR', 'name' => 'Oregon' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'PA', 'name' => 'Pennsylvania' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'RI', 'name' => 'Rhode Island' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'SC', 'name' => 'South Carolina' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'SD', 'name' => 'South Dakota' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'TN', 'name' => 'Tennessee' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'TX', 'name' => 'Texas' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'UT', 'name' => 'Utah' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'VT', 'name' => 'Vermont' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'VA', 'name' => 'Virginia' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'WA', 'name' => 'Washington' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'WV', 'name' => 'West Virginia' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'WI', 'name' => 'Wisconsin' ]);
+			State::create([ 'country_id' => 236, 'abbreviation' => 'WY', 'name' => 'Wyoming' ]);
+
+		}
+ 
+	}
+
+?>
+
