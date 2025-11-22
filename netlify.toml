@@ -1,9 +1,16 @@
 [build]
-  # No build command - we generate static files locally
+  # No build needed - static files are pre-generated locally
+  command = "bash netlify-build.sh"
   publish = "static-site"
+  ignore = "/bin/false"
+
+[build.processing]
+  skip_processing = false
 
 [build.environment]
-  # No build environment needed since we're just serving static files
+  # Disable automatic dependency detection
+  NODE_VERSION = "18"
+  PHP_VERSION = "8.0"
 
 # Redirect rules are in static-site/_redirects
 
