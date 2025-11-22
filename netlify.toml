@@ -8,9 +8,10 @@
   skip_processing = false
 
 [build.environment]
-  # Disable automatic dependency detection
+  # Disable automatic dependency installation
   NODE_VERSION = "18"
   PHP_VERSION = "8.0"
+  NETLIFY_SKIP_INSTALL_DEPENDENCIES = "true"
 
 # Redirect rules are in static-site/_redirects
 
